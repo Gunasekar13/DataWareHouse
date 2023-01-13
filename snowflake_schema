@@ -1,0 +1,28 @@
+Snowflake Schema in Data Warehouse Model❄️⚡:
+
+✳️The snowflake schema is a variant of the star schema.
+
+✳️Here, the centralized fact table is connected to multiple dimensions.
+In the snowflake schema, dimensions are present in a normalized form in multiple related tables.
+
+✳️The snowflake structure materialized when the dimensions of a star schema are detailed and highly structured, having several levels of relationship, and the child tables have multiple parent tables.
+
+✳️ The snowflake effect affects only the dimension tables and does not affect the fact tables.
+
+===========================+
+
+🎯Advantages:
+✅There are two main advantages of snowflake schema given below:
+
+✅It provides structured data which reduces the problem of data integrity.
+✅It uses small disk space because data are highly structured.
+
+===========================+
+🎯Disadvantages:
+❌Snowflaking reduces space consumed by dimension tables but compared with the entire data warehouse the saving is usually insignificant.
+
+❌Avoid snowflaking or normalization of a dimension table, unless required and appropriate.
+
+❌Do not snowflake hierarchies of one dimension table into separate tables.
+
+❌Hierarchies should belong to the dimension table only and should never be snowflakes.
